@@ -221,3 +221,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===== 팀 추가 규칙 =====
+# 비밀 정보
+.env
+.env.*
+!.env.example
+CLAUDE.local.md
+
+# 데이터 · 모델 (공유 드라이브로 주고받기)
+data/*
+!data/sample/
+members/*/data/
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+*.ckpt
+
+# 실행 결과 · 임시 파일
+outputs/
+*.log
+Thumbs.db
+.DS_Store
